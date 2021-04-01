@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="TeachingOrganizerDesktopApp.Views.AddStudentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TeachingOrganizerDesktopApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<Grid  VerticalAlignment="Center" HorizontalAlignment="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<TextBlock Text="Add a new student" FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" TextAlignment="Center" Height="50"/>
+
+		<TextBlock Text="First Name: " FontSize="18" Grid.Row="1" Grid.Column="0"/>
+		<TextBlock Text="Last Name: " FontSize="18" Grid.Row="2" Grid.Column="0"/>
+		<TextBlock Text="Phone Number: " FontSize="18" Grid.Row="3" Grid.Column="0"/>
+		<TextBlock Text="Remaining Courses: " FontSize="18" Grid.Row="4" Grid.Column="0"/>
+		<TextBlock Text="Details: " FontSize="18" Grid.Row="5" Grid.Column="0"/>
+		<TextBlock Text="Observations: " FontSize="18" Grid.Row="6" Grid.Column="0"/>
+
+		<TextBox Text="{Binding FirstName}" FontSize="18" Grid.Row="1" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+		<TextBox Text="{Binding LastName}" FontSize="18" Grid.Row="2" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+		<TextBox Text="{Binding PhoneNumber}" FontSize="18" Grid.Row="3" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+		<TextBox Text="{Binding RemainingSessions}" FontSize="18" Grid.Row="4" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+		<TextBox Text="{Binding Details}" FontSize="18" Grid.Row="5" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+		<TextBox Text="{Binding Observations}" FontSize="18" Grid.Row="6" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+
+		<Button Content="Save" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150"/>
+	</Grid>
+</UserControl>

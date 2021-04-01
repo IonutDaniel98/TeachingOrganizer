@@ -1,0 +1,86 @@
+﻿<Window x:Class="TeachingOrganizerDesktopApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeachingOrganizerDesktopApp"
+		xmlns:viewmodels="clr-namespace:TeachingOrganizerDesktopApp.ViewModels"
+		xmlns:views="clr-namespace:TeachingOrganizerDesktopApp.Views"
+        mc:Ignorable="d"
+		Background="#181735"
+        Title="Organizer" Height="450" Width="800">
+
+	<Window.Resources>
+		<DataTemplate x:Name="studentsViewTemplate" DataType="{x:Type viewmodels:StudentsViewModel}">
+			<views:StudentsView DataContext="{Binding}"/>
+		</DataTemplate>
+		<DataTemplate x:Name="coursesViewTemplate" DataType="{x:Type viewmodels:CoursesViewModel}">
+			<views:CoursesView DataContext="{Binding}"/>
+		</DataTemplate>
+		<DataTemplate x:Name="addStudentViewTemplate" DataType="{x:Type viewmodels:AddStudentViewModel}">
+			<views:AddStudentView DataContext="{Binding}"/>
+		</DataTemplate>
+		<DataTemplate x:Name="addCourseViewTemplate" DataType="{x:Type viewmodels:AddCourseViewModel}">
+			<views:AddCourseView DataContext="{Binding}"/>
+		</DataTemplate>
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+
+		<Grid Background="#0F0F2D" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Text="Organizer"
+					   Foreground="White"
+					   Grid.Row="0"
+					   Grid.Column="1"
+					   Grid.ColumnSpan="3"
+					   VerticalAlignment="Center"
+					   HorizontalAlignment="Center"
+					   FontSize="25"
+					   FontStyle="Oblique"
+					   FontWeight="Bold"
+					   FontFamily="Muli"/>
+
+			<Grid Grid.Row="0"
+						Grid.Column="4"
+						Grid.ColumnSpan="11">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Button Content="Students" Width="auto" Background="SteelBlue" Grid.Column="0" Margin="15,0,15,0" Click="StudentsMenuButton_Clicked"/>
+				<Button Content="Courses" Width="auto" Background="SteelBlue" Grid.Column="1" Margin="15,0,15,0" Click="CoursesMenuButton_Clicked"/>
+				<Button Content="Add Student" Width="auto" Background="SteelBlue" Grid.Column="2" Margin="15,0,15,0" Click="AddStudentMenuButton_Clicked"/>
+				<Button Content="Add Course" Width="auto" Background="SteelBlue" Grid.Column="3" Margin="15,0,15,0" Click="AddCourseMenuButton_Clicked"/>
+			</Grid>
+		</Grid>
+
+		<ContentControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Content="{Binding}"/>
+	</Grid>
+</Window>
