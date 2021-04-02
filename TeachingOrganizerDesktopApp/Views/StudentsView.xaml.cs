@@ -34,6 +34,17 @@ namespace TeachingOrganizerDesktopApp.Views
 
         private void DeleteStudentButton_Clicked(object sender, RoutedEventArgs e)
         {
+            MessageBoxResult result = MessageBox.Show("Are you sure?", "My App", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    StudentService.DeleteStudent(1);
+                    MessageBox.Show("The student was deleted!");
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("The student was not deleted!");
+                    break;
+            }
             DataContext = new StudentsViewModel();
         }
     }

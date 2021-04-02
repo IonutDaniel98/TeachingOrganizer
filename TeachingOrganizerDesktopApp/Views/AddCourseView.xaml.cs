@@ -28,7 +28,7 @@ namespace TeachingOrganizerDesktopApp.Views
 
         private void AddCourseButton_Clicked(object sender, RoutedEventArgs e)
         {
-            DataContext = new CoursesView();
+            DataContext = new CoursesViewModel();
         }
     }
 }

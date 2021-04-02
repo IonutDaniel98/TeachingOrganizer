@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TeachingOrganizerDesktopApp.Service;
 using TeachingOrganizerDesktopApp.ViewModels;
 
 namespace TeachingOrganizerDesktopApp.Views
@@ -33,6 +34,17 @@ namespace TeachingOrganizerDesktopApp.Views
 
         private void DeleteCourseButton_Clicked(object sender, RoutedEventArgs e)
         {
+            MessageBoxResult result = MessageBox.Show("Are you sure?", "My App", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    CourseService.DeleteCourse(1);
+                    MessageBox.Show("The course was deleted!");
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("The course was not deleted!");
+                    break;
+            }
             DataContext = new CoursesViewModel();
         }
     }
