@@ -21,3 +21,4 @@ C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDeskt
 C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\Views\AddCourseView.baml
 C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\Views\AddStudentView.baml
 C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\Views\CoursesView.baml
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\TeachingOrganizerDesktopApp.csprojAssemblyReference.cache

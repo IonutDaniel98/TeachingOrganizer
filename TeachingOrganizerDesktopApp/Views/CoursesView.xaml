@@ -50,7 +50,7 @@
 					<ColumnDefinition Width="auto"/>
 					<ColumnDefinition Width="*"/>
 				</Grid.ColumnDefinitions>
-				<TextBlock Text="Add a new course" FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" TextAlignment="Center" Height="50"/>
+				<TextBlock Text=" " FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" TextAlignment="Center" Height="50"/>
 
 				<TextBlock Text="Student: " FontSize="18" Grid.Row="1" Grid.Column="0"/>
 				<TextBlock Text="Date: " FontSize="18" Grid.Row="2" Grid.Column="0"/>
@@ -66,7 +66,8 @@
 				<TextBox Text="{Binding Duration}" FontSize="18" Grid.Row="5" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 				<TextBox Text="{Binding Plan}" FontSize="18" Grid.Row="6" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 
-				<Button Content="Save" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150"/>
+				<Button Content="Update" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150" Margin="5"/>
+				<Button Content="Delete" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" Width="150" Margin="5"/>
 			</Grid>
 		</Grid>
 	</Grid>
