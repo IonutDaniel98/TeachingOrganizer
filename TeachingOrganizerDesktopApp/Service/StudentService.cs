@@ -12,14 +12,13 @@ namespace TeachingOrganizerDesktopApp.Service
     {
         public static Student CreateStudentRecord(string firstName, string lastName, string phoneNumber, int remainingSessions, string details, string observations)
         {
-            var studentRecord = new Student();
-
-            studentRecord.FirstName = firstName;
-            studentRecord.LastName = lastName;
-            studentRecord.PhoneNumber = phoneNumber;
-            studentRecord.RemainingSessions = remainingSessions;
-            studentRecord.Details = details;
-            studentRecord.Observations = observations;
+            var studentRecord = new Student() { FirstName = firstName,
+                                                LastName = lastName,
+                                                PhoneNumber = phoneNumber,
+                                                RemainingSessions = remainingSessions,
+                                                Details = details,
+                                                Observations = observations
+                                              };
 
             return studentRecord;
         }
@@ -65,12 +64,21 @@ namespace TeachingOrganizerDesktopApp.Service
 
         public static Student GetStudent(long studentID)
         {
-            return StudentRepository.GetStudent(studentID);
+            //return StudentRepository.GetStudent(studentID);
+
+            return new Student() { FirstName = "Ana", LastName = "Ana", RemainingSessions = 2};
         }
 
         public static List<Student> GetListStudent()
         {
-            return StudentRepository.GetListStudent();
+            //return StudentRepository.GetListStudent();
+
+            var result = new List<Student>();
+            var st1 = new Student() { FirstName = "Ana", LastName = "Ana", RemainingSessions = 2 };
+            var st2 = new Student() { FirstName = "Ana2", LastName = "Ana2", RemainingSessions = 2 };
+            result.Add(st1);
+            result.Add(st2);
+            return result;
         }
     }
 }

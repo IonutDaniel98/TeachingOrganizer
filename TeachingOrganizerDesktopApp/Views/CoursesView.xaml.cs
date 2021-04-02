@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TeachingOrganizerDesktopApp.ViewModels;
 
 namespace TeachingOrganizerDesktopApp.Views
 {
@@ -23,6 +24,16 @@ namespace TeachingOrganizerDesktopApp.Views
         public CoursesView()
         {
             InitializeComponent();
+        }
+
+        private void UpdateCourseButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new CoursesViewModel();
+        }
+
+        private void DeleteCourseButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new CoursesViewModel();
         }
     }
 }

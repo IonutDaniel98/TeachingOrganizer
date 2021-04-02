@@ -59,15 +59,15 @@
 				<TextBlock Text="Details: " FontSize="18" Grid.Row="5" Grid.Column="0"/>
 				<TextBlock Text="Observations: " FontSize="18" Grid.Row="6" Grid.Column="0"/>
 
-				<TextBox Text="{Binding FirstName}" FontSize="18" Grid.Row="1" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
-				<TextBox Text="{Binding LastName}" FontSize="18" Grid.Row="2" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
-				<TextBox Text="{Binding PhoneNumber}" FontSize="18" Grid.Row="3" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
-				<TextBox Text="{Binding RemainingSessions}" FontSize="18" Grid.Row="4" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
-				<TextBox Text="{Binding Details}" FontSize="18" Grid.Row="5" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
-				<TextBox Text="{Binding Observations}" FontSize="18" Grid.Row="6" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<TextBox Text="{Binding StudentFirstName}" FontSize="18" Grid.Row="1" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<TextBox Text="{Binding StudentLastName}" FontSize="18" Grid.Row="2" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<TextBox Text="{Binding StudentPhoneNumber}" FontSize="18" Grid.Row="3" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<TextBox Text="{Binding StudentRemainingSessions}" FontSize="18" Grid.Row="4" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<TextBox Text="{Binding StudentDetails}" FontSize="18" Grid.Row="5" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<TextBox Text="{Binding StudentObservations}" FontSize="18" Grid.Row="6" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 
-				<Button Content="Update" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150" Margin="5"/>
-				<Button Content="Delete" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" Width="150" Margin="5"/>
+				<Button Content="Update" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150" Margin="5" Click="UpdateStudentButton_Clicked"/>
+				<Button Content="Delete" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" Width="150" Margin="5" Click="DeleteStudentButton_Clicked"/>
 			</Grid>
 		</Grid>
 	</Grid>

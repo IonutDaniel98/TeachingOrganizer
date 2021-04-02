@@ -22,3 +22,10 @@ C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDeskt
 C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\Views\AddStudentView.baml
 C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\Views\CoursesView.baml
 C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\TeachingOrganizerDesktopApp.csprojAssemblyReference.cache
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\bin\Debug\OrganizerDB.db
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\bin\Debug\Dapper.dll
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\bin\Debug\Dapper.xml
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\TeachingOrganizerDesktopApp_Content.g.cs
+C:\Users\ibeje\Desktop\GitHub\TeachingOrganizerDesktopApp\TeachingOrganizerDesktopApp\obj\Debug\TeachingOrganizerDesktopApp.csproj.CopyComplete

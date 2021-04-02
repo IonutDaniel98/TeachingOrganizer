@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TeachingOrganizerDesktopApp.Records
 {
-    class Student
+    public class Student
     {
         public long StudentID { get; set; }
         public string FirstName { get; set; } = string.Empty;

@@ -12,18 +12,17 @@ namespace TeachingOrganizerDesktopApp.Service
     {
         public static Course CreateCourseRecord(long studentID, string plan, int dateDay, int dateMonth, int dateYear, int startHour, int startMinute, int endHour, int endMinute)
         {
-            var courseRecord = new Course();
-
-            courseRecord.StudentID = studentID;
-            courseRecord.Plan = plan;
-            courseRecord.Duration = endHour-startHour + (decimal)(endMinute - startMinute >= 0 ? endMinute - startMinute : (endMinute - startMinute) * -1);
-            courseRecord.DateDay = dateDay;
-            courseRecord.DateMonth = dateMonth;
-            courseRecord.DateYear = dateYear;
-            courseRecord.StartHour = startHour;
-            courseRecord.StartMinute = startMinute;
-            courseRecord.EndHour = endHour;
-            courseRecord.EndMinute = endMinute;
+            var courseRecord = new Course() { StudentID = studentID,
+                                            Plan = plan,
+                                            Duration = endHour - startHour + (decimal)(endMinute - startMinute >= 0 ? endMinute - startMinute : (endMinute - startMinute) * -1),
+                                            DateDay = dateDay,
+                                            DateMonth = dateMonth,
+                                            DateYear = dateYear,
+                                            StartHour = startHour,
+                                            StartMinute = startMinute,
+                                            EndHour = endHour,
+                                            EndMinute = endMinute
+                                            };
 
             return courseRecord;
         }

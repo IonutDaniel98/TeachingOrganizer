@@ -39,6 +39,6 @@
 		<TextBox Text="{Binding Details}" FontSize="18" Grid.Row="5" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 		<TextBox Text="{Binding Observations}" FontSize="18" Grid.Row="6" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 
-		<Button Content="Save" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150"/>
+		<Button Content="Save" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" Width="150" Click="AddStudentButton_Clicked"/>
 	</Grid>
 </UserControl>

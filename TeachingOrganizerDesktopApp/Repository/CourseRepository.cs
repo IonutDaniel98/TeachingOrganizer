@@ -11,7 +11,7 @@ namespace TeachingOrganizerDesktopApp.Repository
     {
         public static void AddCourse(Course courseRecord)
         {
-
+            SqliteDataAccess.SaveCourse(courseRecord);
         }
 
         public static void UpdateCourse(long courseID, Course courseRecord)
