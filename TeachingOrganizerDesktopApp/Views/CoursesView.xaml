@@ -59,7 +59,7 @@
 				<TextBlock Text="Duration: " FontSize="18" Grid.Row="5" Grid.Column="0"/>
 				<TextBlock Text="Plan: " FontSize="18" Grid.Row="6" Grid.Column="0"/>
 
-				<TextBox Text="{Binding StudentFullName}" FontSize="18" Grid.Row="1" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
+				<ComboBox Text="{Binding StudentFullName}" FontSize="18" Grid.Row="1" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 				<TextBox Text="{Binding CourseDate}" FontSize="18" Grid.Row="2" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 				<TextBox Text="{Binding CourseStartHour}" FontSize="18" Grid.Row="3" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
 				<TextBox Text="{Binding CourseEndHour}" FontSize="18" Grid.Row="4" Grid.Column="1" Width="auto" MinWidth="300" Margin="0,0,10,0"/>
